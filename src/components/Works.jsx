@@ -15,6 +15,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  live_links,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -61,6 +62,23 @@ const ProjectCard = ({
             </p>
           ))}
         </div>
+
+        {live_links && live_links.length > 0 && (
+          <div className='mt-4 flex flex-wrap gap-2'>
+            {live_links.map((link) => (
+              <a
+                key={link.url}
+                href={link.url}
+                target='_blank'
+                rel='noreferrer'
+                onClick={(e) => e.stopPropagation()}
+                className='text-[12px] px-3 py-1 rounded-full bg-black-100 text-secondary hover:text-white hover:bg-tertiary transition-colors'
+              >
+                {link.name}
+              </a>
+            ))}
+          </div>
+        )}
       </Tilt>
     </motion.div>
   );

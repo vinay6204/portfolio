@@ -39,7 +39,7 @@ const Contact = () => {
           from_name: form.name,
           to_name: "Vinay",
           from_email: form.email,
-          to_email: "vinaykumar1504@gmail.com",
+          to_email: "vinaykumar15904@gmail.com",
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
@@ -78,8 +78,8 @@ const Contact = () => {
         <div className='mt-6 flex flex-col gap-2'>
           <p className='text-white-100 text-[14px]'>
             <strong>Email:</strong>{' '}
-            <a href='mailto:vinaykumar1504@gmail.com' className='text-secondary'>
-              vinaykumar1504@gmail.com
+            <a href='mailto:vinaykumar15904@gmail.com' className='text-secondary'>
+              vinaykumar15904@gmail.com
             </a>
           </p>
           <p className='text-white-100 text-[14px]'>
@@ -88,6 +88,28 @@ const Contact = () => {
           </p>
           <p className='text-white-100 text-[14px]'>
             <strong>Location:</strong> Lucknow, Uttar Pradesh
+          </p>
+          <p className='text-white-100 text-[14px]'>
+            <strong>LinkedIn:</strong>{' '}
+            <a
+              href='https://linkedin.com/in/vinay-kumar-b3534628a'
+              target='_blank'
+              rel='noreferrer'
+              className='text-secondary'
+            >
+              linkedin.com/in/vinay-kumar-b3534628a
+            </a>
+          </p>
+          <p className='text-white-100 text-[14px]'>
+            <strong>GitHub:</strong>{' '}
+            <a
+              href='https://github.com/Vinay6204'
+              target='_blank'
+              rel='noreferrer'
+              className='text-secondary'
+            >
+              github.com/Vinay6204
+            </a>
           </p>
         </div>
 

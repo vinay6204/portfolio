@@ -46,12 +46,37 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        Final-year B.Tech Computer Science Engineering student with strong
-        skills in Data Science, Python, Django, and full-stack web
-        development. Experienced in real-world data analysis through an
-        internship and hands-on AI-based projects. Passionate about building
-        scalable, data-driven applications and eager to contribute to a
-        challenging technical role.
+        I'm a Computer Science Engineering graduate from Babu Banarasi Das
+        Northern India Institute of Technology, Lucknow, with hands-on
+        experience in Data Science, Python, and full-stack web development
+        using Django and Node.js. I enjoy turning real-world problems into
+        working software — from AI-powered platforms and e-commerce systems
+        to custom Shopify storefronts for live client businesses.
+      </motion.p>
+
+      <motion.p
+        variants={fadeIn("", "", 0.2, 1)}
+        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+      >
+        During my Data Science internship at Softpro India, I worked
+        hands-on with real-world datasets — cleaning, preprocessing, and
+        running exploratory data analysis to extract insights that supported
+        product quality decisions. On the development side, I've built and
+        deployed a Flipkart-inspired e-commerce platform, an AI-powered
+        travel app with chatbot-based trip planning, and customized Shopify
+        themes across six live client stores.
+      </motion.p>
+
+      <motion.p
+        variants={fadeIn("", "", 0.3, 1)}
+        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+      >
+        I bring strong problem-solving and analytical thinking to every
+        project, along with a collaborative approach to working with teams
+        and clients. Outside of academics, I've competed at state and zonal
+        level in basketball and placed in a Mathematics Olympiad — I like
+        that same combination of discipline and quick thinking in my
+        technical work too.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

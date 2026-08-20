@@ -57,6 +57,10 @@ const services = [
     title: "AI / ML Projects",
     icon: mobile,
   },
+  {
+    title: "Shopify E-Commerce",
+    icon: shopify,
+  },
 ];
 
 const technologies = [
@@ -108,6 +112,10 @@ const technologies = [
     name: "VS Code",
     icon: figma,
   },
+  {
+    name: "Shopify",
+    icon: shopify,
+  },
 ];
 
 const experiences = [
@@ -125,13 +133,25 @@ const experiences = [
     ],
   },
   {
+    title: "Achievements & Certifications",
+    company_name: "Softpro India · Academics · Basketball",
+    icon: docker,
+    iconBg: "#E6DEDD",
+    date: "2020 - 2025",
+    points: [
+      "Data Science Internship Certification – Softpro India.",
+      "Silver Medalist in Mathematics Olympiad.",
+      "Two-time Gold Medalist (Zonal) and Silver Medalist (State-Level) in Basketball Championships.",
+    ],
+  },
+  {
     title: "B.Tech - Computer Science Engineering",
     company_name: "Babu Banarasi Das Northern India Institute of Technology",
     icon: tesla,
     iconBg: "#E6DEDD",
     date: "Aug 2022 - May 2026",
     points: [
-      "Final-year undergraduate (SGPA: 7.2/10).",
+      "Graduated with CGPA: 7.2/10.",
       "Relevant coursework: Data Structures, Algorithms, Databases, Machine Learning.",
     ],
   },
@@ -157,33 +177,6 @@ const experiences = [
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
-
 const projects = [
   {
     name: "AI-Powered Travel Application",
@@ -204,7 +197,7 @@ const projects = [
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://explorefusion.online",
   },
   {
     name: "E-Commerce Web Application",
@@ -225,7 +218,7 @@ const projects = [
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://movva.co.in",
   },
   {
     name: "Quality Product Analysis",
@@ -246,8 +239,37 @@ const projects = [
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://product-quality-estimator-j2er.vercel.app/",
+  },
+  {
+    name: "Shopify Development Projects",
+    description:
+      "Customized Shopify themes using Liquid, HTML, CSS, and JavaScript across multiple live client stores, building optimized, conversion-driven product pages and improving store branding, performance, and customer engagement.",
+    tags: [
+      {
+        name: "shopify",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "liquid",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ecommerce",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: web,
+    source_code_link: "https://rugzari.in",
+    live_links: [
+      { name: "rugzari.in", url: "https://rugzari.in" },
+      { name: "giftondemand.in", url: "https://giftondemand.in" },
+      { name: "vemesfashion.com", url: "https://vemesfashion.com" },
+      { name: "movva.co.in", url: "https://movva.co.in" },
+      { name: "hazaraorchards.com", url: "https://hazaraorchards.com" },
+      { name: "owlskyindia.com", url: "https://owlskyindia.com" },
+    ],
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };
