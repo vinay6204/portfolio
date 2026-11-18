@@ -48,7 +48,8 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a Computer Science Engineering graduate from Babu Banarasi Das
+        I'm currently working as a Website Developer at Lock My College,
+        Lucknow (since October 2026). I'm a Computer Science Engineering graduate from Babu Banarasi Das
         Northern India Institute of Technology, Lucknow, with hands-on
         experience in Data Science, Python, and full-stack web development
         using Django and Node.js. I enjoy turning real-world problems into

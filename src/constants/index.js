@@ -120,6 +120,17 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Website Developer",
+    company_name: "Lock My College · Lucknow",
+    icon: web,
+    iconBg: "#383E56",
+    date: "Oct 2026 - Present",
+    points: [
+      "Working as a Website Developer at Lock My College, Lucknow.",
+      "Building and maintaining the company's website and web features.",
+    ],
+  },
+  {
     title: "Data Science Intern",
     company_name: "Softpro India",
     icon: starbucks,
