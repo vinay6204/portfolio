@@ -42,6 +42,8 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
+      <div className='flex flex-col-reverse md:flex-row md:items-start gap-10'>
+      <div className='flex-1'>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
@@ -78,6 +80,24 @@ const About = () => {
         that same combination of discipline and quick thinking in my
         technical work too.
       </motion.p>
+      </div>
+
+      <motion.div
+        variants={fadeIn("left", "spring", 0.2, 0.75)}
+        className='mt-4 shrink-0 self-center md:self-start'
+      >
+        <div className='green-pink-gradient p-[2px] rounded-[20px] shadow-card'>
+          <img
+            src='/vinay-kumar.jpg'
+            alt='Vinay Kumar, Full Stack Developer from Lucknow'
+            width='280'
+            height='280'
+            loading='lazy'
+            className='w-[220px] h-[220px] sm:w-[280px] sm:h-[280px] rounded-[18px] object-cover'
+          />
+        </div>
+      </motion.div>
+      </div>
 
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
