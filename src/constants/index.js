@@ -164,6 +164,12 @@ const experiences = [
     points: [
       "Graduated with CGPA: 7.2/10.",
       "Relevant coursework: Data Structures, Algorithms, Databases, Machine Learning.",
+      "Programming: Python, JavaScript, SQL.",
+      "Web Development: Django, React JS, Node JS, HTML 5, CSS 3, Shopify (Liquid).",
+      "Data Science: data cleaning, preprocessing, exploratory data analysis (EDA) and visualization.",
+      "Databases: SQLite, MongoDB.",
+      "Tools: Git, Linux, VS Code.",
+      "Built projects including an AI-powered travel application and a Django e-commerce web application.",
     ],
   },
   {
