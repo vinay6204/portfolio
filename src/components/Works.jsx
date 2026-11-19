@@ -18,7 +18,10 @@ const ProjectCard = ({
   live_links,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div
+      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+      className='shrink-0 w-[85%] sm:w-auto snap-start'
+    >
       <Tilt
         tiltMaxAngleX={45}
         tiltMaxAngleY={45}
@@ -105,7 +108,9 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className='sm:mt-20 mt-10 flex flex-wrap gap-7'>
+      <p className='sm:hidden mt-8 text-secondary text-[13px]'>Swipe to see more projects →</p>
+
+      <div className='sm:mt-20 mt-3 flex gap-5 sm:gap-7 overflow-x-auto snap-x snap-mandatory pb-4 sm:flex-wrap sm:overflow-visible sm:pb-0'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
