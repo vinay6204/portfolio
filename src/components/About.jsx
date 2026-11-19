@@ -9,7 +9,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt
-    className='xs:w-[250px] w-full'
+    className='xs:w-[250px] w-[calc(50%-10px)]'
     tiltMaxAngleX={45}
     tiltMaxAngleY={45}
     scale={1}
@@ -19,14 +19,14 @@ const ServiceCard = ({ index, title, icon }) => (
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
     >
-      <div className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'>
+      <div className='bg-tertiary rounded-[20px] sm:py-5 sm:px-12 sm:min-h-[280px] py-4 px-3 min-h-[150px] flex justify-evenly items-center flex-col'>
         <img
           src={icon}
           alt='web-development'
-          className='w-16 h-16 object-contain'
+          className='sm:w-16 sm:h-16 w-10 h-10 object-contain'
         />
 
-        <h3 className='text-white text-[20px] font-bold text-center'>
+        <h3 className='text-white sm:text-[20px] text-[15px] font-bold text-center'>
           {title}
         </h3>
       </div>
@@ -84,7 +84,7 @@ const About = () => {
       </div>
 
       <motion.div
-        variants={fadeIn("left", "spring", 0.2, 0.75)}
+        variants={fadeIn("up", "spring", 0.2, 0.75)}
         className='mt-4 shrink-0 self-center md:self-start'
       >
         <div className='green-pink-gradient p-[2px] rounded-[20px] shadow-card'>
@@ -100,7 +100,7 @@ const About = () => {
       </motion.div>
       </div>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
+      <div className='sm:mt-20 mt-10 flex flex-wrap sm:gap-10 gap-5'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
