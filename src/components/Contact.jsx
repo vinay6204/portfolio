@@ -29,10 +29,17 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!form.name.trim() || !form.email.trim() || !form.message.trim()) {
+      alert("Please fill in your name, email and message.");
+      return;
+    }
+
     setLoading(true);
 
-    emailjs
-      .send(
+    Promise.resolve()
+      .then(() =>
+        emailjs.send(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
@@ -43,6 +50,7 @@ const Contact = () => {
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        )
       )
       .then(
         () => {
@@ -59,7 +67,9 @@ const Contact = () => {
           setLoading(false);
           console.error(error);
 
-          alert("Ahh, something went wrong. Please try again.");
+          alert(
+            "Sorry, the message could not be sent. Please email me directly at vinaykumar15904@gmail.com."
+          );
         }
       );
   };
